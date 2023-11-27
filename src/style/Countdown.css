@@ -8,10 +8,11 @@
 }
 
 .countdown-col {
-  padding-right: 20px;
+  padding-right: 2.75vw;
   color: white;
   text-shadow: rgb(255, 204, 0) 2px 0 10px, rgb(110, 14, 151) 4px 6px 20px, rgb(110, 14, 151) 2px 5px 10px;
   animation: pulsate 1s ease-in-out infinite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @keyframes pulsate {
@@ -21,10 +22,10 @@
 }
 
 .Counter > span > span {
-  font-size: 4vw;
+  font-size: 3.75vw;
 }
 
 .Counter > span > strong {
   padding-right: 0.5vw;
-  font-size: 7vw;
+  font-size: 6.25vw;
 }
