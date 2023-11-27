@@ -1,4 +1,5 @@
 import React from "react";
+// import MyThree from "./CountdownScene/CountdownScene";
 
 class Countdown extends React.Component {
   constructor(props) {
@@ -106,6 +107,7 @@ class Countdown extends React.Component {
           <strong>{this.addLeadingZeros(countDown.sec)}</strong>
           <span>Sec</span>
         </span>
+        {/* <MyThree /> */}
       </div>
     );
   }
