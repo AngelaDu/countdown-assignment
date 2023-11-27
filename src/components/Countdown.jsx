@@ -1,5 +1,5 @@
 import React from "react";
-// import MyThree from "./CountdownScene/CountdownScene";
+import CountdownScene from "./CountdownScene/CountdownScene";
 
 class Countdown extends React.Component {
   constructor(props) {
@@ -88,26 +88,28 @@ class Countdown extends React.Component {
 
     return (
       <div className="Countdown">
-        <span className="countdown-col">
-          <strong>{this.addLeadingZeros(countDown.days)}</strong>
-          <span>{countDown.days === 1 ? "Day" : "Days"}</span>
-        </span>
+        <div className="Counter">
+          <span className="countdown-col">
+            <strong>{this.addLeadingZeros(countDown.days)}</strong>
+            <span>{countDown.days === 1 ? "day" : "days"}</span>
+          </span>
 
-        <span className="countdown-col">
-          <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-          <span>Hours</span>
-        </span>
+          <span className="countdown-col">
+            <strong>{this.addLeadingZeros(countDown.hours)}</strong>
+            <span>{countDown.days === 1 ? "hour" : "hours"}</span>
+          </span>
 
-        <span className="countdown-col">
-          <strong>{this.addLeadingZeros(countDown.min)}</strong>
-          <span>Min</span>
-        </span>
+          <span className="countdown-col">
+            <strong>{this.addLeadingZeros(countDown.min)}</strong>
+            <span>{countDown.days === 1 ? "min" : "mins"}</span>
+          </span>
 
-        <span className="countdown-col">
-          <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-          <span>Sec</span>
-        </span>
-        {/* <MyThree /> */}
+          <span className="countdown-col">
+            <strong>{this.addLeadingZeros(countDown.sec)}</strong>
+            <span>{countDown.days === 1 ? "sec" : "secs"}</span>
+          </span>
+        </div>
+        <CountdownScene />
       </div>
     );
   }
